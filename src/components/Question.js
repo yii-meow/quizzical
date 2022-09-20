@@ -21,7 +21,7 @@ export default function Question({ question, setClicked, showAnswer }) {
                                     ? "chosen"
                                     : "not_chosen"
                         }
-
+                        disabled={showAnswer ? true : false}
                         onClick={() => setClicked(question.id, index)}
                     >
                         {ans}
