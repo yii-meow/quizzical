@@ -7,10 +7,9 @@ body {
   background-image: url("./assets/images/blobs.png"), url("./assets/images/blobs2.png");
   background-repeat: no-repeat, no-repeat;
   background-position: right top, left bottom;
-  height: 100vh;
   font-family: Karia;
   background-color: #F5F7FB;
-  background-size: 110px;
+  background-size: 15%;
 }
 
 .intro {
@@ -26,7 +25,6 @@ body {
   font-weight: 700;
   letter-spacing: 5px;
   font-size: 31px;
-  font-family: Karia;
   height: 40px;
   margin-bottom: 7px;
 }
@@ -42,36 +40,48 @@ body {
   cursor: pointer;
 }
 
-.questions {
+.questions--container {
   height: 100vh;
+  width: 70%;
+  margin: auto;
+}
+
+.questions {
+  height: 100%;
   display: grid;
-  justify-items: center;
   align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .questions--question {
-  width: 400px;
+  width: 100%;
   border-bottom: 1px solid #DBDEF0;
 }
 
 .questions--question p {
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
   font-weight: 600;
   color: #293264;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .questions--question button {
   color: #293264;
-  width: max-content;
-  height: 21px;
   border: 1px solid #4D5B9E;
   border-radius: 8px;
   margin-right: 0.7rem;
   font-family: 'Inter';
-  font-size: 12px;
-  margin-bottom: 1rem;
+  padding: 7px;
+  font-size: 15px;
+  margin-bottom: 7%;
+  cursor: pointer;
+}
+
+.questions--question button:hover {
+  background-color: #F5F7FB;
+  box-shadow:1px 1px grey;
 }
 
 .check_answer {
@@ -83,6 +93,7 @@ body {
   text-align: center;
   color: #F5F7FB;
   font-size: 12px;
+  cursor:pointer;
 }
 
 .bottom {

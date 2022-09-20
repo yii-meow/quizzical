@@ -5,7 +5,7 @@ export default function Intro(props) {
         <div className="intro">
             <div>
                 <h3>Quizzical</h3>
-                <p>Some description if needed</p>
+                <p>Challenge this quiz!</p>
 
                 <button
                     className="start_quiz"
