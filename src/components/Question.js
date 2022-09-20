@@ -11,13 +11,11 @@ export default function Question({ question, setClicked, showAnswer }) {
                         key={index}
                         className={
                             showAnswer
-                                ? index === question.clickedIndex ?
-
-                                    index === question.correctIndex()
-                                        ? "show_correct"
-                                        : "show_incorrect"
-
-                                    : index === question.correctIndex() ? "show_correct" : ""
+                                ? index === question.correctIndex()
+                                    ? "show_correct"
+                                    : index === question.clickedIndex
+                                        ? "show_incorrect"
+                                        : ""
 
                                 : question.isClicked && index === question.clickedIndex
                                     ? "chosen"
